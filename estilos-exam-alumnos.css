@@ -6,7 +6,7 @@
 /*Hacemos el cuerpo de la web flexible*/
 body {
   font-size: 16px;
-  display: flex;
+  /*display flex*/
 }
 
 /*Estilo para todos los enlaces de la web*/
@@ -29,7 +29,7 @@ header {
 /*Posiciono el menú de hamburguesa el primero*/
 header > nav#menu-principal {
   padding-left: 1rem;
-  order: 1;
+  order: -1;
 }
 header > picture#logo-cabecera {
   /*Para alinear el logo verticalmente*/
@@ -57,7 +57,7 @@ header > nav#menu-principal > label {
 /*Estilo para el icono de hamburguesa*/
 header > nav#menu-principal > label span {
   /* El tamaño debe ser 1.6 el tamaño raiz y en negrita. */
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -94,7 +94,7 @@ header > nav#bloque-iconos > ul > li {
 
 /*Para separar los dos iconos */
 header > nav#bloque-iconos > ul > li:last-child {
-  justify-content: space-between;
+  display: flex;
 }
 
 header > nav#bloque-iconos > ul > li > a > i {
@@ -143,10 +143,13 @@ main > article.item > p > span.precio-sin-oferta {
 
 main > article.item > a > picture > img {
   /*La imagen tiene que tener un tamaño adecuado ocupando todo el ancho*/
-  width: 100px;
+  width: 150px;
 }
 
 /*El pie en la versión de móvil está oculto*/
+footer {
+  display: none;
+}
 
 /*Para la versión de tablet, deben de aparecer 3 item´s por fila.
 Incluye las etiquetas necesarias para que se muestre el diseño mostrado para tablet.*/
