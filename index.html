@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseño Responsive</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <!-- Incluye algún framework de íconos si es necesario, como FontAwesome -->
+    <link rel="stylesheet" href="estilos-exam-alumnos.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Menú principal con hamburguesa -->
+      <nav id="menu-principal">
+        <input type="checkbox" id="menu-hamburger" />
+        <label for="menu-hamburger">
+          <span>&#9776;</span>
+          <!-- Ícono de hamburguesa -->
+          <span>MENÚ</span>
+        </label>
+        <ul id="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Logo de la cabecera -->
+      <picture id="logo-cabecera">
+        <img src="/RECURSOS/desigual-logo.png" alt="Logo de la cabecera" />
+      </picture>
+
+      <!-- Bloque de íconos -->
+      <nav id="bloque-iconos">
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-user"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+      <!-- Artículos -->
+      <article class="item">
+        <a href="#">
+          <picture>
+            <img src="/RECURSOS/abrigo-arka.jpg" alt="Producto 1" />
+          </picture>
+        </a>
+        <h3>Americana Blazer</h3>
+        <p>
+          <span class="precio-oferta">74,95€</span>
+          <span class="precio-sin-oferta">149,95€</span>
+        </p>
+      </article>
+
+      <article class="item">
+        <a href="#">
+          <picture>
+            <img src="RECURSOS/chaleco-patch.jpg" alt="Producto 2" />
+          </picture>
+        </a>
+        <h3>Chaleco Path</h3>
+        <p>
+          <span class="precio-oferta">39,97€</span>
+          <span class="precio-sin-oferta">79,95€</span>
+        </p>
+      </article>
+
+      <!-- Agrega más artículos según sea necesario -->
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2024 Mi Sitio Web</p>
+    </footer>
+  </body>
+</html>
